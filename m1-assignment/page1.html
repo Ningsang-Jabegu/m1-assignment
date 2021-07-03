@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathmandu Metropolitant City</title>
+    <style>
+        body {
+            background-color: rgb(168, 215, 253);
+            margin:1.5rem;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container to wrap everything -->
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="logo">
+        </header>
+        <!-- Main Navigation-->
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">Contacts</a></li>
+            </ul>
+
+        </nav><!-- End Navigation-->
+    </div>
+    <!-- End Container-->
+
+    <!-- Main content begins here -->
+    <main>
+        <img src="images/namaskar.png" alt="hello">
+        <h2 class="center">Want to explore Nepal:</h2>
+        <!-- Form starts from here -->
+        <form action="/signup" method="past">
+            <fieldset>
+                <legend> Visitors personal information</legend><br>
+                <label>Enter your full name</label><br>
+                <input type="text" name="name"><br><br>
+                <label> Enter your email</label><br>
+                <input type="email" name="email"><br><br>
+                <label> Enter your phone</label><br>
+                <input type="tel" name="phone"><br><br>
+                <label>Select your gender</label><br>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female<br><br>
+                <label> How should we contact you?</label><br>
+                <select>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="Fax">Fax</option>
+                </select><br>
+                <label>Tell us the reason of your visit</label><br>
+                <textarea rows="5" cols="30"></textarea><br>
+                <input type="submit" value="Book">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+        <!-- Form ends here -->
+        <h2>Contact us:</h2>
+        <h4>Phone: +977-14******</h4>
+        <h4>Fax: +977- 14265</h4>
+        <h4>Email 1: mayor@kathmandu.gov.np </h4>
+        <h4>Email 2: ceo@kathmandu.gov.np</h4>
+    </main>
+    <!-- Main content ends here -->
+    <footer>
+        <div class="social">
+            <!-- Social media -->
+            <h3>Follow us on:</h3>
+            <a href="#"><img src="images/facebook.png" height="50" width="50"></a>
+            <a href="#"><img src="images/twitter.jpg" height="50" width="50"></a>
+            <a href="#"><img src="images/youtube.png" height="50" width="50"></a>
+            <p>&copy; :: Copyright 2020</p>
+        </div>
+        <div class="disclamer">
+            <p>This is not for commercial purpose.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
