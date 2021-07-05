@@ -1,3 +1,28 @@
-.body{
-    background-color: antiquewhite;
+body {
+    background-color: rgb(168, 215, 253);
+    margin: 1.5rem;
+}
+
+.f_color {
+    color: rgb(17, 11, 109);
+    font-family: 'fuggles';
+}
+
+.center {
+    text-align: center;
+}
+
+.align {
+    text-align: justify;
+}
+
+li a {
+    text-decoration: none;
+
+}
+.blue_back{
+    background-color: rgb(21, 37, 129);
+}
+.white{
+    color: white;
 }

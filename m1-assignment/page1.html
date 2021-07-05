@@ -6,15 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kathmandu Metropolitant City</title>
-    <style>
-        body {
-            background-color: rgb(168, 215, 253);
-            margin:1.5rem;
-        }
-        .center{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -29,6 +21,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="page1.html">Contacts</a></li>
+                <li><a href="page2.html">Register</a></li>
             </ul>
 
         </nav><!-- End Navigation-->
@@ -40,9 +33,9 @@
         <img src="images/namaskar.png" alt="hello">
         <h2 class="center">Want to explore Nepal:</h2>
         <!-- Form starts from here -->
-        <form action="/signup" method="past">
+        <form action="/signup" method="post">
             <fieldset>
-                <legend> Visitors personal information</legend><br>
+                <legend> Leave us your messages and feedback</legend><br>
                 <label>Enter your full name</label><br>
                 <input type="text" name="name"><br><br>
                 <label> Enter your email</label><br>
@@ -82,7 +75,9 @@
             <p>&copy; :: Copyright 2020</p>
         </div>
         <div class="disclamer">
-            <p>This is not for commercial purpose.</p>
+            <center>
+                <p>This is not for commercial purpose.</p>
+            </center>
         </div>
     </footer>
 </body>
