@@ -33,6 +33,9 @@ a:visited, a:active, a:link, a:hover {
     border-right: 2px solid rgb(168, 215, 253);
     border-left: 2px solid rgb(168, 215, 253);
 }
+.gallary {
+    border-right: 2px solid rgb(168, 215, 253);
+}
 li:hover {
     color: #fff;
     background-color: #030433;
@@ -155,6 +158,9 @@ footer{
 .h3 {
     color: #051435;
 }
+.disclamer{
+    text-align: center;
+}
 /* Form */
 form {
     margin: 0 20px 0 20px;
@@ -237,3 +243,61 @@ input.loc {
 .flex {
     display: inline;
 }
+
+/* Gallary*/ 
+#album .photo{
+    background-color: rgb(168, 215, 253);
+    margin: 2em;
+}
+#album{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+li.photo {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.image {
+    height: 350px;
+    width: 450px;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    border-bottom-left-radius:5% ;
+    border-bottom-right-radius: 5%;
+    display: block;
+}
+
+.photo:first-child, .photo:nth-child(2) {
+    display: inline-flex;
+}
+.image, figcaption {
+    display: in-block;
+    position: relative;
+}
+.photo:nth-child(3), .photo:nth-child(4) {
+    display: inline-flex;
+}
+.photo:nth-child(5), .photo:nth-child(6) {
+    display: inline-flex;
+}
+.photo:nth-child(7), .photo:nth-child(8) {
+    display: inline-flex;
+}
+.photo:nth-child(9), .photo:nth-child(10) {
+    display: inline-flex;
+}
+figcaption {
+    background-color: #1c1c75;
+    color:#fff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    width: 450px;
+    position: absolute;
+}
+
