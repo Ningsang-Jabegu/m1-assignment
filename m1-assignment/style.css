@@ -245,7 +245,7 @@ input.loc {
 }
 
 /* Gallary*/ 
-#album .photo{
+#album #photo{
     background-color: rgb(168, 215, 253);
     margin: 2em;
 }
@@ -254,12 +254,17 @@ input.loc {
     margin: 0;
     padding: 0;
     text-align: center;
-
 }
-li.photo {
+li#photo {
     margin: 0;
     padding: 0;
     display: block;
+    height: 350px;
+    width: 450px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    position: relative;
 }
 .image {
     height: 350px;
@@ -272,23 +277,23 @@ li.photo {
     display: block;
 }
 
-.photo:first-child, .photo:nth-child(2) {
+#photo:first-child, #photo:nth-child(2) {
     display: inline-flex;
 }
 .image, figcaption {
     display: in-block;
     position: relative;
 }
-.photo:nth-child(3), .photo:nth-child(4) {
+#photo:nth-child(3), #photo:nth-child(4) {
     display: inline-flex;
 }
-.photo:nth-child(5), .photo:nth-child(6) {
+#photo:nth-child(5), #photo:nth-child(6) {
     display: inline-flex;
 }
-.photo:nth-child(7), .photo:nth-child(8) {
+#photo:nth-child(7), #photo:nth-child(8) {
     display: inline-flex;
 }
-.photo:nth-child(9), .photo:nth-child(10) {
+#photo:nth-child(9), #photo:nth-child(10) {
     display: inline-flex;
 }
 figcaption {
@@ -299,5 +304,35 @@ figcaption {
     font-weight: bold;
     width: 450px;
     position: absolute;
+    margin-bottom: -50em;
+    display: block;
 }
+/* Gallary picture hover discription */
 
+.discription{
+    margin-top: 3.2em;
+    color: transparent;
+    font-display: block;
+    position: absolute;
+    background-color: transparent;
+    padding: 2em;
+    width: 386px;
+    height: 235px;
+    border-bottom-left-radius:5% ;
+    border-bottom-right-radius: 5%;
+}
+.discription:hover {
+    margin-top: 3.2em;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 12pt;
+    font-display: block;
+    background-color: #1d40776e;
+    padding: 2em;
+    width: 386px;
+    height: 235px;
+    border-bottom-left-radius:5% ;
+    border-bottom-right-radius: 5%;
+    transition: 1s;
+    cursor: pointer;
+}
