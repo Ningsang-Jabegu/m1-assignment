@@ -2,7 +2,7 @@ var photos = [];
 var fileNames = [];
 var imageList = [];
 var image;
-var openList = "<li id='photo'>";
+var openList = "<li id='photo' onclick='myFunction()'>";
 var closeList = "</li>";
 var openCaptionTag ="<figcaption>";
 var closeCaptionTag ="</figcaption>";
@@ -12,7 +12,7 @@ var captionTexts =[];
 var descTexts =[];
 for (var i=0; i<10; i++) {
         fileNames.push("photo"+(i+1));
-        photos.push("<img src ='images/"+fileNames[i]+".jfif' class='image'alt='"+fileNames[i]+"' onclick='myFunction1()'>");
+        photos.push("<img src ='images/"+fileNames[i]+".jfif' class='image'alt='"+fileNames[i]+"' >");
         captionTexts.push("Boudhanath Stupa","Kathmandu City","Thamel","Pashupatinath Temple","Local Store","White Gumba","Durbar Square","Dal Bhat","Lord Buddha Statue","Baba Ji");
         descTexts.push("This is Boudhanath Stupa: an arial view.","This is Kathmandu City: an arial view.","This is Thamel: a street view.","Pashupatinath temple: World heritage site","This is local store: an local view.","This is White Gumba: a corner view."
         ,"This is Durbar Square: a front view.","This is Dal Bhat: a local food.","This is statue of lord Buddha: a side view.","They are baba ji: a view.");
@@ -26,29 +26,31 @@ document.getElementById("album").innerHTML = imageList;
 // Info Box
 
        
-document.getElementsByClassName("discription").addEventListener("click",myFunction1)
-function myFunction1() {
-        document.getElementById("infoBox").style.visibility ="visible";
-        /*
+function myFunction() {
         var OpenHeadingTag ="<h3 id='heading'>";
         var closeHeadingTag ="</h3>";
         var heading = [];
         var openTextInfoTag ="<p id='textInfo'>";
         var textInfo = [];
         var closeTextInfoTag ="</p>";
-        var opentextLinkTag ="<p id='textLink'><a href=''>";
+        var opentextLinkTag ="<p id='textLink' onclick='myFunction1()'><a href='#'>";
         var textLink = [];
         var closeTextLinkTag ="</a></p>";
-        var image = document.getElementClassName("image");
-        
-                heading.push("Boudhanath Stupa","Kathmandu City","Thamel","Pashupatinath Temple","Local Store","White Gumba","Durbar Square","Dal Bhat","Lord Buddha Statue","Baba Ji")
-                textInfo.push("This is Boudhanath Stupa: an arial view.","This is Kathmandu City: an arial view.","This is Thamel: a street view.","Pashupatinath temple: World heritage site","This is local store: an local view.","This is White Gumba: a corner view."
+        var inforBox;
+        heading.push("Boudhanath Stupa","Kathmandu City","Thamel","Pashupatinath Temple","Local Store","White Gumba","Durbar Square","Dal Bhat","Lord Buddha Statue","Baba Ji")
+        textInfo.push("This is Boudhanath Stupa: an arial view.","This is Kathmandu City: an arial view.","This is Thamel: a street view.","Pashupatinath temple: World heritage site","This is local store: an local view.","This is White Gumba: a corner view."
                 ,"This is Durbar Square: a front view.","This is Dal Bhat: a local food.","This is statue of lord Buddha: a side view.","They are baba ji: a view.");
-                textLink.push("Click this to close");
+        textLink.push("Click this to close");
+        /*
+        if photo1=
+        */    
                 inforBox = OpenHeadingTag + heading +closeHeadingTag +openTextInfoTag +textInfo +
-                closeTextInfoTag + opentextLinkTag + textLink + closeTextLinkTag;
-                inforBox1.push(inforBox);*/
-        
+                closeTextInfoTag + opentextLinkTag + textLink + closeTextLinkTag;  
+        document.getElementById("infoBox").style.visibility ="visible";
+        document.getElementById("infoBox").innerHTML = inforBox;
+      }
+function myFunction1() {
+        document.getElementById("infoBox").style.visibility ="hidden";
 }
-document.getElementById("infoBox").innerHTML = inforBox1;
+
 
