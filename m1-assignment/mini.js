@@ -33,24 +33,51 @@ function myFunction() {
         var openTextInfoTag ="<p id='textInfo'>";
         var textInfo = [];
         var closeTextInfoTag ="</p>";
-        var opentextLinkTag ="<p id='textLink' onclick='myFunction1()'><a href='#'>";
+        var opentextLinkTag ="<p id='textLink' onclick='myFunction1()'>";
         var textLink = [];
-        var closeTextLinkTag ="</a></p>";
+        var closeTextLinkTag ="</p>";
         var inforBox;
-        heading.push("Boudhanath Stupa","Kathmandu City","Thamel","Pashupatinath Temple","Local Store","White Gumba","Durbar Square","Dal Bhat","Lord Buddha Statue","Baba Ji")
+        textLink.push("Click this to close");
+        for (var i=0; i<=10; i++){
+
+        heading.push("Boudhanath Stupa","Kathmandu City","Thamel","Pashupatinath Temple","Local Store","White Gumba","Durbar Square","Dal Bhat","Lord Buddha Statue","Baba Ji");
         textInfo.push("This is Boudhanath Stupa: an arial view.","This is Kathmandu City: an arial view.","This is Thamel: a street view.","Pashupatinath temple: World heritage site","This is local store: an local view.","This is White Gumba: a corner view."
                 ,"This is Durbar Square: a front view.","This is Dal Bhat: a local food.","This is statue of lord Buddha: a side view.","They are baba ji: a view.");
-        textLink.push("Click this to close");
+        
+        var head = heading[i+1];
+        var body = textInfo[i+1];
         /*
         if photo1=
         */    
-                inforBox = OpenHeadingTag + heading +closeHeadingTag +openTextInfoTag +textInfo +
-                closeTextInfoTag + opentextLinkTag + textLink + closeTextLinkTag;  
+                inforBox = OpenHeadingTag + head +closeHeadingTag +openTextInfoTag +body +
+                closeTextInfoTag + opentextLinkTag + textLink + closeTextLinkTag; 
+
+        } 
         document.getElementById("infoBox").style.visibility ="visible";
         document.getElementById("infoBox").innerHTML = inforBox;
+        
+
       }
 function myFunction1() {
         document.getElementById("infoBox").style.visibility ="hidden";
 }
-
-
+// dropdown menu
+function contact() {
+     var select_content = document.getElementById ("select_contact");
+     var hideUnhide = document.getElementById("hide-unhide");
+     hideUnhide.value = select_content.options[select_content.selectedIndex].value;   
+var getEmailLabel = "<label>Enter your Email</label>";
+var getEmailBox = "<input type='email' value='email_address'>";
+var getPhoneLabel = "<label>Enter your phone</label>";
+var getPhoneBox = "<input type='number' value='phone_number'>";
+var getFaxLabel = "<label>Enter your fax</label>";
+var getFaxBox = "<input type='text' value='fax_number'>";
+if (hideUnhide.value == Email) {
+        document.getElementById("hide-unhide") = getEmailLabel + getEmailBox;
+} else if (hideUnhide.value == Phone) {
+        document.getElementById("hide-unhide") = getPhoneLabel + getPhoneBox;
+}
+else {
+        document.getElementById("hide-unhide") = getFaxLabel + getFaxBox;
+}
+}

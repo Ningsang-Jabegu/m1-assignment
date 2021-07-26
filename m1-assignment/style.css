@@ -243,6 +243,16 @@ input.loc {
 .flex {
     display: inline;
 }
+#select_contact {
+    width: 9em;
+}
+select {
+    color: #fff;
+    padding: 0.2em;
+}
+#hide-unhide {
+    /*visibility: hidden;*/
+}
 
 /* Gallary*/ 
 #album #photo{
@@ -354,4 +364,5 @@ figcaption {
 }
 #textLink {
     color: #dfcd2e;
+    cursor: pointer;
 }
